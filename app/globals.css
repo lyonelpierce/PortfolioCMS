@@ -12,4 +12,19 @@
   mask-position: center;
   -webkit-mask-size: contain;
   mask-size: contain;
+  height: 800px;
+  width: 800px;
+}
+
+.about-container {
+  height: 100%;
+  -webkit-mask-image: url("../public/blob.svg");
+  mask-image: url("../public/blob.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  height: 500px;
 }

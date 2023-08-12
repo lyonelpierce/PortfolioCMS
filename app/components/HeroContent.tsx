@@ -1,3 +1,7 @@
+"use client";
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./Experience";
+
 interface HeroContentProps {
   info: string[];
 }
@@ -17,7 +21,19 @@ const HeroContent: React.FC<HeroContentProps> = ({ info }) => {
           Get In Touch
         </button>
       </div>
-      <div className="w-[60%] bg-[#f66e4c] w-full hero-container min-h-screen"></div>
+      <div className="w=[60%] relative">
+        <div className="bg-[#f66e4c] hero-container"></div>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Canvas
+            shadows
+            gl={{ antialias: true }}
+            camera={{ position: [5, 2, 11], fov: 35 }}
+            className="cursor-pointer"
+          >
+            <Experience />
+          </Canvas>
+        </div>
+      </div>
     </section>
   );
 };

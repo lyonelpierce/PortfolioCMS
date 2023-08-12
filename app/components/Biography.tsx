@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import Link from "next/link";
 
 interface BiographyProps {
@@ -7,18 +7,8 @@ interface BiographyProps {
 
 const Biography: React.FC<BiographyProps> = ({ info }) => {
   return (
-    <section
-      id="about"
-      className="flex flex-row justify-between items-center h-full"
-    >
-      <div className="w-[60%] relative overflow-hidden bg-cover bg-no-repeat bg-[50%]">
-        <Image
-          src="/blob-shape.png"
-          alt="blob shape"
-          width={500}
-          height={500}
-        />
-      </div>
+    <section id="about" className="flex flex-row justify-between items-center">
+      <div className="w-[50%] bg-[#f66e4c] hero-container about-container"></div>
 
       <div className="w-[50%]">
         <p className="text-base text-white leading-relaxed leading-8">
