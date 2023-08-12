@@ -18,10 +18,10 @@ const meta = info.map((data) => {
   };
 });
 
-// export const metadata: Metadata = {
-//   title: meta[0].title,
-//   description: meta[0].description,
-// };
+export const metadata: Metadata = {
+  title: meta[0].title,
+  description: meta[0].description,
+};
 
 export default function RootLayout({
   children,
